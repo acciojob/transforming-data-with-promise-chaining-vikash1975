@@ -1,5 +1,5 @@
 //your JS code here. If required.
-document.getElementById("btn").addEventListener("click", ()=>{
+function startProcess() {
 let input=document.getElementById("ip").value;
 let output=document.getElementById("output");
 	output.innerText="";
@@ -51,6 +51,6 @@ let output=document.getElementById("output");
 	})
 	})
 	.catch((err)=>{
-		console.error(error);
+		console.error(err);
 	})
-});
+}
